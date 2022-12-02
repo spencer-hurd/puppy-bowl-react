@@ -8,6 +8,7 @@ const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/`;
 
 const Main = () => {
   const [players, setPlayers] = useState([]);
+  const [selectedPuppy, setSelectedPuppy] = useState([]);
 
   //  {
 
@@ -36,14 +37,6 @@ const Main = () => {
       <div id="all-players-container">
         <PlayerList players={players} />
       </div>
-      </div>
-      // Pulled the code below from ContactList project, update w/ puppy bowl Player ID & player-container.
-      // {selectedContact.id ? (
-      //   <SingleContact selectedContact={selectedContact} />
-      // ) : (
-      //   <ContactList contacts={contacts} selectContact={selectContact} />
-      // )}
-    </div>
     </div>
   );
 };
