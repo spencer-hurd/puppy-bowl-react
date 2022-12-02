@@ -36,6 +36,14 @@ const Main = () => {
       <div id="all-players-container">
         <PlayerList players={players} />
       </div>
+      </div>
+      // Pulled the code below from ContactList project, update w/ puppy bowl Player ID & player-container.
+      // {selectedContact.id ? (
+      //   <SingleContact selectedContact={selectedContact} />
+      // ) : (
+      //   <ContactList contacts={contacts} selectContact={selectContact} />
+      // )}
+    </div>
     </div>
   );
 };
