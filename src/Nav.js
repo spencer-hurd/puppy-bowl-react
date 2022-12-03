@@ -1,10 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
-    <div>
-      <input className="searchbar" placeholder="Enter Pup Name"></input>
-      <button className="search" onClick={}>Search</button>
-    </div>
+    <header>
+      <Link to="/" className="link-button">
+        Home
+      </Link>
+    </header>
   );
 };
+export default Nav;

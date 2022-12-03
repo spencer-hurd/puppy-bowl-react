@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+
+}
+
 #all-players-container {
     display: flex;
     flex-wrap: wrap;
@@ -55,3 +61,17 @@
   .single-player-view > p {
     margin: 10px 0px 0px 0px;
   }
+
+.link-button {
+    background-color: bisque;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: .3em;
+    margin-bottom: 1em;
+}
+
+header {
+  padding: 1em;
+  background-color: #ffb53f;
+}
