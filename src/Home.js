@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import PlayerList from "./player-container";
+import PlayerList from "./Player-container";
 
 const cohortName = "2211-FTB-ET-WEB-FT";
 const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/`;
 
 const Home = () => {
   const [players, setPlayers] = useState([]);
-  //   const [selectedPuppy, setSelectedPuppy] = useState({});
+
   useEffect(() => {
     const fetchAllPlayers = async () => {
       const response = await fetch(`${APIURL}/players`);
