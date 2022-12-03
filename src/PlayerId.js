@@ -1,34 +1,28 @@
 import React from "react";
 import SinglePlayerCard from "./SinglePlayerCard";
+const cohortName = "2211-FTB-ET-WEB-FT";
+const APIURL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/`;
 
-const playerId = (props) => {
+const PlayerId = (props) => {
   return (
-    <div id="singlePuppy">
-      <SinglePlayerCard />
+    <div className="single-player-view">
+      <img src={props.pup.imageUrl} alt={`Photo of ${props.pup.name}`} />
       <p>
-        <b>Name:</b>
-        {props.selectedPuppy.name}
+        <b>Name: </b> {props.pup.name}
       </p>
       <p>
-        <b>Email:</b>
-        {props.selectedContact.email}
+        <b>ID: </b> {props.pup.id}
       </p>
       <p>
-        <b>Phone:</b>
-        {props.selectedContact.phone}
+        <b>Breed: </b> {props.pup.breed}
       </p>
-      <div>
-        <b>Address:</b>
-        <p>
-          <b>Street:</b>
-          <br />
-          <b>City/State:</b>
-        </p>
-      </div>
       <p>
-        <b>Company:</b>
-        {props.selectedContact.company.name}
+        <b>Status: </b> {props.pup.status}
+      </p>
+      <p>
+        <b>Team ID: </b> {props.pup.teamId}
       </p>
     </div>
   );
 };
+export default PlayerId;
